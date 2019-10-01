@@ -1,1 +1,86 @@
-/* Put your CSS here */
+@font-face {
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Airstream-webfont.eot");
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Airstream-webfont.woff') format('woff'),
+       url('fonts/Airstream-webfont.ttf') format('truetype'),
+       url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
+
+     }
+.Holygrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Holygrail {
+  display: flex;
+  flex: 1;
+}
+.thumbnail-title {
+  background: rgb(96, 125, 139);
+  color: rgb(202, 238, 255);
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0,4em 1em;
+}
+a[href="#"] {
+  text-decoration: none;
+}
+.page-title {
+  background: white;
+  font-family: /*add font here...*/
+  font-size: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.HolyGrail-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.restaurant-image {
+  display: block;
+  width: 100%;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  background: rgb(128, 128, 128);
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+
+@media (min-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+  .HolyGrail-content {
+    flex: 1;
+  }
+  .HolyGrail-nav, .HolyGrail-ads {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
