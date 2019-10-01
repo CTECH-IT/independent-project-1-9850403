@@ -1,1 +1,10 @@
-/* Put your CSS here */
+@font-face {
+  font-family: 'BigShouldersDisplay';
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/BigShouldersDisplay-Black.ttf");
+  src: url('fonts/BigShouldersDisplay-.eot?#iefix') format('embedded-opentype'),
+       url('fonts/BigShouldersDisplay-light.ttf') format('light'),
+       url('fonts/BigShouldersDisplay-Regular.ttf') format('truetype'),
+       url('fonts/BigShouldersDisplay.svg#BigShouldersDisplay') format('svg');
+}
