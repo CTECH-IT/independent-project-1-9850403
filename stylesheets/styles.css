@@ -84,3 +84,16 @@ a[href="#"] {
     flex: 0 0 12em;
   }
 }
+@@media (orientation: portrait) {
+  .main-content {
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  .thumbnail-list {
+    flex-direction: row-reverse;
+    order: 0;
+  }
+  .thumbnail-item + .thumbnail-item {
+    margin-top: 20px;
+}
