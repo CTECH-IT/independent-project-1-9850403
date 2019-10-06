@@ -30,8 +30,8 @@
   flex: 1;
 }
 .thumbnail-title {
-  background: rgb(96, 125, 139);
-  color: rgb(202, 238, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(128, 128, 128);
   display: block;
   font-size: 18px;
   margin: 0;
