@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'airstreamregular';
   font-style: normal;
   font-weight: normal;
@@ -18,93 +18,26 @@
        url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
        url('font/LAKESHOR-webfont.svg#lakeshore') format('svg');
        }
-
-.Holygrail {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.Holygrail {
-  display: flex;
-  flex: 1;
-}
-.thumbnail-title {
-  background: rgb(255, 255, 255);
-  color: rgb(128, 128, 128);
-  display: block;
-  font-size: 18px;
-  margin: 0;
-  padding: 0,4em 1em;
-}
-a[href="#"] {
-  text-decoration: none;
-}
-.page-title {
-  background: white;
-  font-family: lakeshore;
-  font-size: 37px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.main-header {
-  flex: 0 1 auto;
-}
-
-.HolyGrail-content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-}
-
-.restaurant-image {
-  display: block;
-  width: 100%;
-}
-
-.restaurant-item {
-  border: 1px solid rgb(80%, 100%, 100%);
-  border: 1px solid rgba(100%, 100%, 100%, 0.8);
-  display: inline-block;
-  max-width: 120px;
-  min-width: 120px;
-  width: 120px;
-
-  transition: transform 133ms ease-in-out;
-}
-
-body{
-  font-size: 10px;
-}
-
-.restaurant-item {
-  max-width: 260px;
-}
-.HolyGrail-nav, .HolyGrail-ads {
-  /* 12em is the width of the columns */
-  flex: 0 0 12em;
+*/
+html, body {
   height: 100%;
 }
 
-.HolyGrail-nav {
-  /* put the nav on the left */
-  order: -1;
+*{
+  margin: 1px;
 }
-
-.HolyGrail,
-.HolyGrail-body {
-  background: rgb(128, 128, 128);
+body{
+  font-size: 15px;
+  color: white;
+  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
 
-.HolyGrail-nav {
-  order: -1;
-}
 .restaurant-image {
   width: 100%;
 }
-
 .restaurant-list {
   display: flex;
   flex: 0 1 auto;
@@ -119,66 +52,55 @@ body{
 .detail-image {
   width: 90%;
 }
-.detail-image-container {
-  flex: 1 1 auto;
+
+a[href="#"] {
+  text-decoration: none;
+}
+
+.flex-header {
+  background-color: #5070B5;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: 50px
+}
+.flex-main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.detail-image-frame {
-  position: relative;
-  text-align: center;
-
-  transition: transform 333ms cubic-bezier(.17, 0.67, 0.95, .35);
-}
-.detail-image-title {
-  color: white;
-  font-family: airstreamregular;
-  font-size: 40px;
-  position: absolute;
-  bottom: -16px;
-  left: 4px;
-  text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
-}
-.hidden-detail .detail-image-container {
-  display: none;
-}
-.hidden-detail .restaurant-list {
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
 }
 
-.hidden-detail .restaurant-item {
-  max-width: 80%
+.flex-nav {
+  background-color: #B95F21;
+  padding-top: 8rem;
+  flex: 1 1 5rem;
+}
+
+.flex-article {
+  background-color: #81A43C;
+  padding-top: 8rem;
+  flex: 3 3 ;
 }
 
 
-@media (min-width: 768px) {
-  .HolyGrail-body {
-    flex-direction: row;
-    margin-left: 20px;
-    overflow: hidden;
-    flex: 1;
-  }
-  .HolyGrail-content {
-    flex: 1;
-  }
-  .HolyGrail-nav, .HolyGrail-ads {
-    /* 12em is the width of the columns */
-    flex: 0 0 12em;
-    margin-top: 20px;
-  }
+.flex-aside {
+  background-color: #B95F21;
+  padding-top: 8rem;
+  flex: 1 1 5rem;
 }
-@@media (orientation: portrait) {
-  .main-content {
-    flex-direction: column-reverse;
-    margin-left: 20px;
-    overflow: hidden;
+
+.flex-footer {
+  background-color: #5070B5;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media all and (max-width: 640px) {
+  .flex-main {
+    flex-direction: column;
   }
   .restaurant-list {
-    flex-direction: row-reverse;
+    flex-direction: row;
     order: 0;
+    padding: 0 35px;
   }
-  .restaurant-item + .restaurant-item {
-    margin-top: 20px;
+
+
 }
